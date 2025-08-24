@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('projects.json')
+    fetch('./projects.json')
         .then(response => response.json())
         .then(data => {
             const pathname = window.location.pathname;
@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(work);
     }
 });
+
 
 
 
