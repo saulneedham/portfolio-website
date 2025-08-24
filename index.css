@@ -162,31 +162,47 @@ nav ul li a:hover::after{
 
 /*---------------------projects----------------------*/
 
-#projects{
+#projects {
     padding: 50px 0;
 }
 
-.work-list{
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.work{
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.work img{
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
-.layer{
+.project-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: opacity 0.5s;
+}
+
+.layer {
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0,0,0,0.6),#1010aa);
@@ -206,12 +222,12 @@ nav ul li a:hover::after{
     transition: opacity 0.5s;
 }
 
-.layer h3{
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
     color: #1010aa;
     text-decoration: none;
@@ -224,12 +240,38 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     opacity: 1;
+}
+
+.work:hover .project-title {
+    opacity: 0;
+}
+
+.layer a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    background: #0606428c;
+    padding: 0 20px;
+    height: 40px;
+    width: auto;
+    line-height: 40px;
+    border-radius: 18px;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.layer a:hover {
+    background: #08086a;
+    transform: scale(1.05);
 }
 
 .btn{
@@ -238,7 +280,7 @@ nav ul li a:hover::after{
     width: fit-content;
     border: 1px solid #1010aa;
     padding: 14px 50px;
-    border-radius: 6px;
+    border-radius: 160px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
@@ -247,6 +289,7 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #1010aa;
 }
+
 
 /*---------------------contact----------------------*/
 
@@ -380,6 +423,104 @@ form .btn2{
     margin-top: 20px;
 }
 
+/*---------------------galleries----------------------*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery div {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1; /* keep square */
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery div:hover img {
+    transform: scale(1.05);
+}
+
+/* Modal overlay */
+.modal {
+    display: none; /* keep hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal.show {
+    display: flex;       /* ADD THIS */
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    max-width: 30vw;
+    max-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* ensures content is centered vertically inside modal */
+}
+
+/* Modal image */
+.modal-img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+/* Caption below the image */
+.modal-caption {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    word-wrap: break-word;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #1010aa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
 /*---------------------mobile css----------------------*/
 
 nav .fas{
@@ -438,6 +579,25 @@ nav .fas{
     .about-col-2{
         font-size: 14px;
     }
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        grid-auto-rows: minmax(250px, auto);
+    }
+    .work {
+        height: 100%;
+        display: flex;
+    }
+    .work img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+    }
+    .layer p {
+        font-size: 8px;
+    }    
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
@@ -447,5 +607,8 @@ nav .fas{
     }
     .copyright{
         font-size: 14px;
+    }
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

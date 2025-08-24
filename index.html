@@ -4,9 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal portfolio - Saul Needham</title>
+        <title>Personal Portfolio - Saul Needham</title>
         <link rel="stylesheet" href="index.css">
-        <script src="https://kit.fontawesome.com/721353e1a3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
     <body>
 
@@ -63,14 +64,14 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Programming</span><br>Python, Java, C#, C++</li>
+                                <li><span>Programming</span><br>Python, Java, C#, C++, SQL</li>
                                 <li><span>Web design</span><br>HTML, CSS, JS, React</li>
-                                <li><span>MS Office</span><br>Word, Excel, PowerPoint</li>
+                                <li><span>MS Office</span><br>Word, Excel, PowerPoint, Specialist certified</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>2023 - Present</span><br>Tutor Trust - Secondary School Maths tutor around Manchester Area.</li>
+                                <li><span>2023 - 2025</span><br>Tutor Trust - Secondary School Maths tutor around Manchester Area.</li>
                                 <li><span>July 2022</span><br>IBM - Work experience putting coding into practice in an agile work enviroment.</li>
                                 <li><span>2021 - 2023</span><br>Mathnasium - Full curriculum maths tutor working with children aged 5 to 16.</li>
                             </ul>
@@ -91,56 +92,9 @@
         <div id="projects">
             <div class="container">
                 <h1 class="sub-title">My Projects</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/crypter.png">
-                        <div class="layer">
-                            <h3>'Crypter' - Online Encryption Program</h3>
-                            <p>A Python program merging client-server functionalities using sockets
-                            for secure communication. Users effortlessly create accounts and log 
-                            in, with passwords fortified using SHA256 hashing. Each client is 
-                            generated unique public and private keys for enhanced security, 
-                            enabling them to asymmetrically encrypt and decrypt messages. This 
-                            advanced feature allows users to securely exchange messages within a 
-                            chatroom, ensuring confidential communication. The program prioritizes 
-                            user-friendly interactions while providing robust encryption mechanisms 
-                            for private messaging in a dynamic chat environment.</p>
-                            <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/deserted.png">
-                        <div class="layer">
-                            <h3>'Deserted' - A Platformer Game</h3>
-                            <p>A captivating desert-themed platformer game that uses parallax scrolling 
-                            to create an immersive, dynamic environment. Players navigate through 
-                            challenging levels, each featuring interactive puzzles that must be solved to 
-                            progress to the next section. The parallax effect enhances the visual depth, 
-                            making the desert landscape feel expansive and alive. With intuitive controls 
-                            and engaging puzzle mechanics, the game offers a fun and rewarding experience, 
-                            blending action and problem-solving as players explore the vast, shifting 
-                            sands of the desert.</p>
-                            <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/presentai.png">
-                        <div class="layer">
-                            <h3>'PresentAI' - AI PowerPoint Generator</h3>
-                            <p>An innovative Python program combining AI and web scraping to provide 
-                            users with tailored content for presentations. Upon inputting a topic, 
-                            the program automatically scrapes relevant data and images from the web. 
-                            Using AI and an API key, it analyzes and organizes the collected information 
-                            into concise bullet points. These points are then structured into a 
-                            professional PowerPoint slideshow, allowing users to quickly generate 
-                            informative and visually appealing presentations. This tool streamlines the 
-                            research and presentation creation process, offering both efficiency and 
-                            intelligence in content curation.</p>
-                            <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
-                        </div>
-                    </div>
+                <div class="work-list" id="projects-container">
                 </div>
-                <a href="#" class="btn">See more</a>
+                <a href="projects.html" class="btn">See all projects</a>
             </div>
         </div>
 
@@ -227,6 +181,8 @@
                 .catch(error => console.error('Error!', error.message))
             })
         </script>
+
+        <script src="projects.js"></script>
 
     </body>
 </html>

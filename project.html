@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Project - Saul Needham</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<style>
+  body { background-color: #000; color: #fff; }
+  hr { border: 0; height: 10px; background-color: #000; margin: 20px 0; }
+  .gallery img { max-width: 100%; margin-bottom: 10px; cursor: pointer; }
+</style>
+<body>
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="index.html#header">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <h1 class="sub-title" id="project-title"></h1>
+    <br>
+    <h3 id="project-subtitle"></h3>
+    <br>
+    <div id="project-body"></div>
+    <br>
+    <ul id="project-bullets"></ul>
+
+    <hr>
+
+    <h1 class="sub-title">Gallery</h1>
+    <div class="gallery" id="project-gallery"></div>
+
+    <!-- Modal for gallery images -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img class="modal-img" id="img01">
+        <div class="modal-caption" id="caption"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>Copyright © Saul Needham - 2024</p>
+  </div>
+
+  <script src="projects.js"></script>
+</body>
+</html>

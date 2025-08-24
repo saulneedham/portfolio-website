@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "slug": "crypter",
+    "title": "Crypter",
+    "subtitle": "Online Asymmetric Encryption Program",
+    "thumbnail": "images/p1.png",
+    "bullets": [
+      "Merges client-server functionalities using sockets for secure communication",
+      "Allows users to create accounts and log in with passwords securely hashed using SHA256",
+      "Generates unique public and private keys for each client to enhance security",
+      "Enables asymmetric encryption and decryption of messages for secure communication",
+      "Supports private messaging with strong encryption within a chatroom environment",
+      "Prioritizes user-friendly interactions for seamless experience",
+      "Ensures robust encryption mechanisms for confidential communication in dynamic chat environments"
+    ],
+    "body": "<p>A Python program merging client-server functionalities using sockets for secure communication. Users effortlessly create accounts and log in, with passwords fortified using SHA256 hashing. Each client is generated unique public and private keys for enhanced security, enabling them to asymmetrically encrypt and decrypt messages. This advanced feature allows users to securely exchange messages within a chatroom, ensuring confidential communication. The program prioritizes user-friendly interactions while providing robust encryption mechanisms for private messaging in a dynamic chat environment.</p>",
+    "images": [
+      "images/p1/0.png",
+      "images/p1/1.png",
+      "images/p1/2.png",
+      "images/p1/3.png",
+      "images/p1/4.png",
+      "images/p1/5.png",
+      "images/p1/6.png",
+      "images/p1/7.png"
+    ],
+    "captions": [
+      "Basic UI of Crypter",
+      "Showcasing ability to find keys",
+      "Showcasing succesful encryption",
+      "Client flowchart",
+      "Server flowchard",
+      "Login page with input validation",
+      "Registering page with input validation",
+      "Saved and hashed login information"
+    ]
+  },
+
+  {
+    "id": 2,
+    "slug": "presentai",
+    "title": "PresentAI",
+    "subtitle": "AI Integrated PowerPoint Generator",
+    "thumbnail": "images/p2.png",
+    "bullets": [
+      "Uses AI and web scraping for tailored presentation content",
+      "Automatically gathers data and images based on user input",
+      "Utilises wikipedia to scrape subheadings and information",
+      "Organizes content into concise bullet points for clarity",
+      "Generates professional PowerPoint slideshows automatically",
+      "Streamlines research and presentation creation for efficiency",
+      "Enhances content curation with intelligent automation"
+    ],
+    "body": "<p>An innovative Python program combining AI and web scraping to provide users with tailored content for presentations. Upon inputting a topic, the program automatically scrapes relevant data and images from the web. Using AI and an API key, it analyzes and organizes the collected information into concise bullet points. These points are then structured into a professional PowerPoint slideshow, allowing users to quickly generate informative and visually appealing presentations. This tool streamlines the research and presentation creation process, offering both efficiency and intelligence in content curation.</p>",
+    "images": [
+      "images/p2/0.png",
+      "images/p2/1.png",
+      "images/p2/2.png",
+      "images/p2/3.png"
+    ],
+    "captions": [
+      "Code snippet & UI",
+      "OpenAI credit usage",
+      "Program generated files",
+      "Program generated PowerPoint"
+    ]
+  },
+
+  {
+    "id": 3,
+    "slug": "deserted",
+    "title": "Deserted",
+    "subtitle": "Puzzle Platformer Game",
+    "thumbnail": "images/p3.png",
+    "bullets": [
+      "Captivating desert-themed platformer game with immersive parallax scrolling",
+      "Features dynamic, challenging levels with interactive puzzles to solve",
+      "Parallax effect creates visual depth, making the desert landscape feel expansive and alive",
+      "Intuitive controls for easy navigation and smooth gameplay",
+      "Engaging puzzle mechanics that blend action and problem-solving",
+      "Offers a rewarding experience as players explore the vast, shifting sands of the desert"
+    ],
+    "body": "<p>A captivating desert-themed platformer game that uses parallax scrolling to create an immersive, dynamic environment. Players navigate through challenging levels, each featuring interactive puzzles that must be solved to progress to the next section. The parallax effect enhances the visual depth, making the desert landscape feel expansive and alive. With intuitive controls and engaging puzzle mechanics, the game offers a fun and rewarding experience, blending action and problem-solving as players explore the vast, shifting sands of the desert.</p>",
+    "images": [
+      "images/p3/0.png",
+      "images/p3/1.png",
+      "images/p3/2.png",
+      "images/p3/3.png"
+    ],
+    "captions": [
+      "Home screen",
+      "Bridge puzzle",
+      "Landscape",
+      "Landscape 2"
+    ]
+  },
+
+  {
+    "id": 4,
+    "slug": "tqi-checker",
+    "title": "TQI Checker",
+    "subtitle": "Automated Essay Marker",
+    "thumbnail": "images/p4.png",
+    "bullets": [
+      "Streamlines the marking of English essays by identifying key components of analysis",
+      "Detects and highlights language techniques, such as similes and metaphors",
+      "Identifies quotes and inferences, focusing on the impact of the text",
+      "Utilizes advanced string parsing and file management to scan essays efficiently",
+      "Pinpoints critical elements to ensure a structured and thorough review process",
+      "Visually segments key points to minimize the risk of overlooking important arguments",
+      "Enhances grading accuracy, consistency, and time-efficiency"
+    ],
+    "body": "<p>TQI Checker is a powerful Python program designed to streamline the marking of English essays by automatically identifying key components of analysis. It detects and highlights three critical elements: language techniques (e.g., similes, metaphors), quotes, and inference (the impact of the text). Using advanced string parsing and file management, TQI Checker scans essays to pinpoint these elements, ensuring a structured and efficient review process. By visually segmenting key points, the tool reduces the risk of overlooking a student's argument, making grading more accurate, consistent, and time-efficient.</p>",
+    "images": [
+      "images/p4/0.png",
+      "images/p4/1.png",
+      "images/p4/2.png",
+      "images/p4/3.png"
+    ],
+    "captions": [
+      "Marked example 1",
+      "Marked example 2",
+      "Marked example 3",
+      "Marked example 4"
+    ]
+  },
+
+  { "id": 5, "slug": "project-5", "title": "Project 5", "subtitle": "-", "thumbnail":"images/p0.png", "bullets":["-"], "body":"<p>-</p>", "images":["images/p0.png"], "captions":["-"] },
+  { "id": 6, "slug": "project-6", "title": "Project 6", "subtitle": "-", "thumbnail":"images/p0.png", "bullets":["-"], "body":"<p>-</p>", "images":["images/p0.png"], "captions":["-"] },
+  { "id": 7, "slug": "project-7", "title": "Project 7", "subtitle": "-", "thumbnail":"images/p0.png", "bullets":["-"], "body":"<p>-</p>", "images":["images/p0.png"], "captions":["-"] },
+  { "id": 8, "slug": "project-8", "title": "Project 8", "subtitle": "-", "thumbnail":"images/p0.png", "bullets":["-"], "body":"<p>-</p>", "images":["images/p0.png"], "captions":["-"] },
+  { "id": 9, "slug": "project-9", "title": "Project 9", "subtitle": "-", "thumbnail":"images/p0.png", "bullets":["-"], "body":"<p>-</p>", "images":["images/p0.png"], "captions":["-"] },
+  { "id": 10, "slug": "project-10", "title": "Project 10", "subtitle": "-", "thumbnail":"images/p0.png", "bullets":["-"], "body":"<p>-</p>", "images":["images/p0.png"], "captions":["-"] }
+]

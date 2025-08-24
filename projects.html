@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects - Saul Needham</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+
+    <style>
+        body{
+            background-color: #000000;
+        }
+        hr{
+            border: 0;
+            height: 10px;
+            background-color: #000000;
+            margin: 20px 0;
+        }
+    </style>
+
+<!---------------------projects------------------------>
+
+    <body>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+<!---------------------projects---------------------->
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list" id="projects-container">
+                    <!-- Projects will be loaded here dynamically -->
+                </div>
+            </div>
+        </div>
+
+<!---------------------footer---------------------->
+
+        <div class="copyright">
+            <p>Copyright © Saul Needham - 2024</p>
+        </div>
+
+        <script src="projects.js"></script>
+
+    </body>
+</html>
