@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             const pathname = window.location.pathname;
-            const isIndex = pathname === '/' || pathname.endsWith('index.html');
+            const isIndex = pathname.endsWith('/') || pathname.endsWith('index.html');
             const isProjectsPage = pathname.includes('projects.html');
             const isProjectPage = pathname.includes('project.html');
     
@@ -111,5 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(work);
     }
 });
+
 
 
