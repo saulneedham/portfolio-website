@@ -1,7 +1,7 @@
 # Portfolio-Website
 Responsive, JavaScript-driven portfolio website built with HTML and CSS that dynamically generates all project pages and content from a centralized JSON file.
 
-📘 Included Projects
+##📘 Included Projects
 
 index.html – The main **Home Page** structure including about, contact and a limited display of featured projects.
 
@@ -17,7 +17,7 @@ projects.json – The **central data file** storing all details, descriptions an
 
 images folder – Stores all images, icons, and visual assets used across the portfolio website.
 
-🛠 Built With
+##🛠 Built With
 
 HTML
 
